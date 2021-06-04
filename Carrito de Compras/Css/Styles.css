@@ -1,0 +1,129 @@
+﻿:root {
+    --primario: #9c27b0;
+    --primarioOscuro: #89119d;
+    --secundario: #FFCE00;
+    --secundarioOscuro: rgb(233,187,2);
+    --blanco: #fff;
+    --negro: #000;
+    --fuente-principal: 'Staatliches', cursive;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    background: var(--primarioOscuro);
+}
+body {
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+h1 {
+    text-align: center;
+    color: var(--secundario );
+    font-family: var(--fuente-principal);
+}
+p {
+    font-size: 1.8rem;
+    font-family: var(--fuente-principal);
+    color: var(--blanco);
+}
+img {
+    width: 100%;
+}
+
+/* Barra de navegacion */
+.ancho {
+    width: 100%;
+    margin: auto;
+    height: 10rem;
+    
+}
+.logo{
+    width:30%;
+    height: 10rem;
+    float: left;
+    display: flex;
+    align-items: center;
+    
+}
+.img-logo{
+    width:5rem;
+    height: 5rem;
+}
+.logo p a {
+    color: var(--blanco);
+    font-size: 5rem;
+    text-decoration: none;
+}
+nav {
+    width: 70%;
+    height: 10rem;
+    float: left;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul li{
+    display: inline;
+    padding-inline: 2rem;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:  var(--fuente-principal);
+}
+/* Productos */
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+.producto{
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
+}
+.producto__nombre{
+    font-size: 4rem;
+}
+.producto__precio{
+    font-size: 2.5rem;
+}
+.producto__precio, .producto__nombre {
+    font-family: var(--fuente-principal);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+
+
+.footer {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin: 2rem;
+}
+
+.footer__texto {
+    font-family: var(--fuente-principal);
+    text-align: center;
+    font-size: 2.2rem;
+}

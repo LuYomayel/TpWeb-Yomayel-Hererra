@@ -1,0 +1,18 @@
+D:\Luciano\UTN\OneDrive - frgp.utn.edu.ar\TSP\3er Cuatri\Programacion 3\TP-WinForm\Negocio\bin\Debug\Negocio.dll
+D:\Luciano\UTN\OneDrive - frgp.utn.edu.ar\TSP\3er Cuatri\Programacion 3\TP-WinForm\Negocio\bin\Debug\Negocio.pdb
+D:\Luciano\UTN\OneDrive - frgp.utn.edu.ar\TSP\3er Cuatri\Programacion 3\TP-WinForm\Negocio\bin\Debug\Dominio.dll
+D:\Luciano\UTN\OneDrive - frgp.utn.edu.ar\TSP\3er Cuatri\Programacion 3\TP-WinForm\Negocio\bin\Debug\Dominio.pdb
+D:\Luciano\UTN\OneDrive - frgp.utn.edu.ar\TSP\3er Cuatri\Programacion 3\TP-WinForm\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+D:\Luciano\UTN\OneDrive - frgp.utn.edu.ar\TSP\3er Cuatri\Programacion 3\TP-WinForm\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+D:\Luciano\UTN\OneDrive - frgp.utn.edu.ar\TSP\3er Cuatri\Programacion 3\TP-WinForm\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+D:\Luciano\UTN\OneDrive - frgp.utn.edu.ar\TSP\3er Cuatri\Programacion 3\TP-WinForm\Negocio\obj\Debug\Negocio.dll
+D:\Luciano\UTN\OneDrive - frgp.utn.edu.ar\TSP\3er Cuatri\Programacion 3\TP-WinForm\Negocio\obj\Debug\Negocio.pdb
+C:\Users\aleh0\Downloads\Actividad2-master\Negocio\bin\Debug\Negocio.dll
+C:\Users\aleh0\Downloads\Actividad2-master\Negocio\bin\Debug\Negocio.pdb
+C:\Users\aleh0\Downloads\Actividad2-master\Negocio\bin\Debug\Dominio.dll
+C:\Users\aleh0\Downloads\Actividad2-master\Negocio\bin\Debug\Dominio.pdb
+C:\Users\aleh0\Downloads\Actividad2-master\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\aleh0\Downloads\Actividad2-master\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\aleh0\Downloads\Actividad2-master\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\aleh0\Downloads\Actividad2-master\Negocio\obj\Debug\Negocio.dll
+C:\Users\aleh0\Downloads\Actividad2-master\Negocio\obj\Debug\Negocio.pdb
