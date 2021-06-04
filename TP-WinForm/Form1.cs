@@ -173,6 +173,7 @@ namespace Presentacion
             detalle.ID = seleccionado.CodigoArt;
             detalle.ShowDialog();
             cargarLista();
+            
         }
 
         private void CbxClave_SelectedIndexChanged(object sender, EventArgs e)

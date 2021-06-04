@@ -14,13 +14,15 @@ namespace Carrito_de_Compras
         protected void Page_Load(object sender, EventArgs e)
         {
             ProductoNegocio negocio = new ProductoNegocio();
-
-            lista = negocio.listar();
+            Producto producto = new Producto();
+           
             try
             {
+                lista = negocio.listar();
+                Session.Add("productoseleccionado",lista);
 
             }
-            catch (Exception)
+            catch (Exception) 
             {
 
                 throw;
