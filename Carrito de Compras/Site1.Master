@@ -16,14 +16,14 @@
         <div class="ancho">
             
                 <div class="logo">
-                    <a href="Default.aspx">
+                    <a href="index.aspx">
                         <img class="img-logo" src="img/storeIcon.png" alt="logotipo">
                     </a>
-                    <p><a class="navegacion__enlace " href="Default.aspx">Store</a></p>
+                    <p><a class="navegacion__enlace " href="index.aspx">Store</a></p>
                 </div>
             <nav>
             <ul>
-                <li><a href="default.aspx">Tienda</a></li>
+                <li><a href="index.aspx">Tienda</a></li>
                 <li><a href="About.aspx">Nosotros</a></li>
                 <li><a href="Carrito.aspx">Carrito</a></li>
             </ul>

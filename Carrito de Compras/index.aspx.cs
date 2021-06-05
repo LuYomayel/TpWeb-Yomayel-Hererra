@@ -19,7 +19,7 @@ namespace Carrito_de_Compras
             try
             {
                 lista = negocio.listar();
-                Session.Add("productoseleccionado",lista);
+                Session.Add("listadoProductos",lista);
 
             }
             catch (Exception) 

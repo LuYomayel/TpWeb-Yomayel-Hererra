@@ -2,6 +2,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
      <div class="contenedor">
+         <h1>Nuestros Productos</h1>
      
     <div class="grid">
        <% foreach (Dominio.Producto item in lista)
@@ -16,8 +17,8 @@
                     <p class="producto__precio">$<% = item.Precio %> </p>
                     <div class="camisa">
                     <form class="formulario">
-                        <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
-                        <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                        <a href="Carrito.aspx?id=<% = item.Id %>">Agregar al carrito</a>
+                        
                     
                          </div>
                     <a href="Detalle.aspx?id=<% = item.Id %>">
