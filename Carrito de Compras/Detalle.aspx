@@ -1,34 +1,27 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Detalle.aspx.cs" Inherits="Carrito_de_Compras.Detalle" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-
+    <h1 class="padding-bottom">Articulo seleccionado</h1>
     <div class="contenedor">
      
-    <div class="grid">
-
-    <div class="card" style="width: 18rem;">
-        <div class="card-header">
-            <div class="producto__informacion">
-
-              
-                    <form Style="align-content:center";class="formulario">
-                         <p Style="color:blue"> <asp:Label Text="Articulo Seleccionado"   runat="server" /></p>
-                         <img src="dfdf" class="card-img-top" ID="imgseleccionado" runat="server" />
-                         <p> <asp:Label Text="lala" ID="lblseleccionado" runat="server" /></p>
-                         <p> <asp:Label Text="lala" ID="lblseleccionado1" runat="server" /></p>
-                         <p> <asp:Label Text="lala" ID="lblseleccionado2" runat="server" /></p>
-                         <p> <asp:Label Text="lala" ID="lblseleccionado3" runat="server" /></p>
-                         <p> <asp:Label Text="lala" ID="lblseleccionado4" runat="server" /></p>
-                         <p> <asp:Label Text="lala" ID="lblseleccionado5" runat="server" /></p>
-    
-                    </form>
-                
-
-            </div>
-
+        <div class="columnas ">
+            
+                <div class="img">
+                    <img src="srcImg" class="card-img-top" ID="imgseleccionado" runat="server" />
+                </div>
+                <div class="columna2 centrado">
+                    <p class="nombre-producto"> <asp:Label Text="lala" ID="lblNombre" runat="server" /></p>
+                    <div class="columnas">
+                            <p>Marca: <asp:Label Text="lala" ID="lblMarca" runat="server" /></p>
+                            <p>Categoria: <asp:Label Text="lala" ID="lblCategoria" runat="server" /></p>
+                            <p class="grid-column1">Precio: $<asp:Label Text="lala" ID="lblPrecio" runat="server" /></p>
+                            <p class="grid-column1">Descripcion: <asp:Label Text="lala" ID="lblDescripcion" runat="server" /></p>
+                            <a href="Carrito.aspx?id=<%  = hola %>" class="boton-ancho">Agregar al carrito</a>
+                    </div>
+                    
+                    
+                </div>
+            
         </div>
-
-     </div>
-         </div>
     </div>
 </asp:Content>

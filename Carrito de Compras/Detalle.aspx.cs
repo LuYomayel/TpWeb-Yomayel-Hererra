@@ -6,24 +6,23 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Negocio;
-using Dominio;
 namespace Carrito_de_Compras
 {
     public partial class Detalle : System.Web.UI.Page
     {
+        public string hola;
         protected void Page_Load(object sender, EventArgs e)
         {
             int id = int.Parse(Request.QueryString["id"]);
-            List<Producto> listado = (List<Producto>)Session["productoseleccionado"];
+            List<Producto> listado = (List<Producto>)Session["listadoProductos"];
             Producto seleccionado = listado.Find(x => x.Id == id);
-            lblseleccionado.Text = seleccionado.CodigoArt;
-            lblseleccionado1.Text = seleccionado.Nombre;
-            lblseleccionado2.Text = seleccionado.Marca.Nombre;
-            lblseleccionado3.Text = seleccionado.Descripcion;
-            lblseleccionado4.Text = seleccionado.Categoria.Nombre;
-            lblseleccionado5.Text = Convert.ToString(seleccionado.Precio);
+            lblNombre.Text = seleccionado.Nombre;
+            lblMarca.Text = seleccionado.Marca.Nombre;
+            lblDescripcion.Text = seleccionado.Descripcion;
+            lblCategoria.Text = seleccionado.Categoria.Nombre;
+            lblPrecio.Text = Convert.ToString(seleccionado.Precio);
             imgseleccionado.Src = seleccionado.UrlImagen;
-
+            hola = (seleccionado.Id).ToString();
         }
     }
 }

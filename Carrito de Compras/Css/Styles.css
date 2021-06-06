@@ -2,7 +2,7 @@
     --primario: #9C27B0;
     --primarioOscuro: #9C27B0;
     --secundario: #FFCE00;
-    --secundarioOscuro: #fff;
+    --secundarioOscuro: rgb(233,187,2);
     --blanco: #fff;
     --negro: #000;
     --fuente-principal: 'Staatliches', cursive;
@@ -29,7 +29,7 @@ body {
 }
 h1 {
     text-align: center;
-    color: var(--primario );
+    color: var(--secundario );
     font-family: var(--fuente-principal);
 }
 p {
@@ -40,7 +40,9 @@ p {
 img {
     width: 100%;
 }
-
+.centrado{
+    justify-content:center;
+}
 /* Barra de navegacion */
 .ancho {
     width: 100%;
@@ -132,7 +134,36 @@ a {
     padding: 1rem;
     transition: background-color .3s ease;
 }
+.boton:hover,
+.boton-ancho:hover {
+    cursor: pointer; /*cada vez que le das estilo a un submit pierde la manito
+                        asi que hay que darle esta propiedad de nuevo*/
+    background-color: var(--secundarioOscuro);
+}
 
+
+/* Detalle */
+.padding-bottom {
+    padding-bottom: 4rem
+}
+.columna1{
+    width: 100%;
+}
+.nombre-producto{
+    text-align:center;
+    font-size:10rem;
+}
+.boton-ancho {
+    background-color: var(--secundario);
+    font-size: 2rem;
+    font-family: var(--fuente-principal);
+    padding: 1.5rem;
+    transition: background-color .3s ease;
+    grid-column: 1/3;
+}
+.grid-column1{
+    grid-column:1;
+}
 /* Footer */
 .footer {
     background-color: var(--primarioOscuro);
