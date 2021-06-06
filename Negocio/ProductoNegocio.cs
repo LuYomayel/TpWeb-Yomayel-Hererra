@@ -155,6 +155,43 @@ namespace Negocio
                 datos.cerrarConexion();
             }
         }
+        public Producto listarProducto1(string ID)
+        {
+            Producto producto = new Producto();
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("select A.Codigo, A.Nombre, A.Descripcion," +
+                    " A.Precio, A.ImagenUrl, M.Descripcion Marca, C.Descripcion " +
+                    "Categoria from ARTICULOS as A inner join Marcas as M on M.ID" +
+                    " = A.IdMarca inner join CATEGORIAS as C on C.Id = A.IdCategoria " +
+                    "where A.Id = '" + ID + "'");
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    Producto aux = new Producto();
+
+                    producto.Nombre = (string)datos.Lector["Nombre"];
+                    producto.Descripcion = (string)datos.Lector["Descripcion"];
+                    producto.Precio = (decimal)datos.Lector["Precio"];
+                    producto.UrlImagen = (string)datos.Lector["ImagenUrl"];
+                    producto.Marca = new Marca((string)datos.Lector["Marca"]);
+                    producto.Categoria = new Categoria((string)datos.Lector["Categoria"]);
+
+
+                }
+
+                return producto;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
 
         public List<Producto> listarFiltrado(string filtro, string clave, string criterio)
         {

@@ -16,3 +16,12 @@ C:\Users\aleh0\Downloads\Actividad2-master\Negocio\obj\Debug\Negocio.csproj.Core
 C:\Users\aleh0\Downloads\Actividad2-master\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\aleh0\Downloads\Actividad2-master\Negocio\obj\Debug\Negocio.dll
 C:\Users\aleh0\Downloads\Actividad2-master\Negocio\obj\Debug\Negocio.pdb
+F:\Luciano\Github\Carrito de compras\Negocio\bin\Debug\Negocio.dll
+F:\Luciano\Github\Carrito de compras\Negocio\bin\Debug\Negocio.pdb
+F:\Luciano\Github\Carrito de compras\Negocio\bin\Debug\Dominio.dll
+F:\Luciano\Github\Carrito de compras\Negocio\bin\Debug\Dominio.pdb
+F:\Luciano\Github\Carrito de compras\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+F:\Luciano\Github\Carrito de compras\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+F:\Luciano\Github\Carrito de compras\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+F:\Luciano\Github\Carrito de compras\Negocio\obj\Debug\Negocio.dll
+F:\Luciano\Github\Carrito de compras\Negocio\obj\Debug\Negocio.pdb

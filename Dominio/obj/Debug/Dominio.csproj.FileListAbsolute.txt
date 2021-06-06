@@ -4,3 +4,9 @@ D:\Luciano\UTN\OneDrive - frgp.utn.edu.ar\TSP\3er Cuatri\Programacion 3\TP-WinFo
 D:\Luciano\UTN\OneDrive - frgp.utn.edu.ar\TSP\3er Cuatri\Programacion 3\TP-WinForm\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 D:\Luciano\UTN\OneDrive - frgp.utn.edu.ar\TSP\3er Cuatri\Programacion 3\TP-WinForm\Dominio\obj\Debug\Dominio.dll
 D:\Luciano\UTN\OneDrive - frgp.utn.edu.ar\TSP\3er Cuatri\Programacion 3\TP-WinForm\Dominio\obj\Debug\Dominio.pdb
+F:\Luciano\Github\Carrito de compras\Dominio\bin\Debug\Dominio.dll
+F:\Luciano\Github\Carrito de compras\Dominio\bin\Debug\Dominio.pdb
+F:\Luciano\Github\Carrito de compras\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+F:\Luciano\Github\Carrito de compras\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+F:\Luciano\Github\Carrito de compras\Dominio\obj\Debug\Dominio.dll
+F:\Luciano\Github\Carrito de compras\Dominio\obj\Debug\Dominio.pdb

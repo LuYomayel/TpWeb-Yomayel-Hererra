@@ -33,3 +33,20 @@ C:\Users\aleh0\Downloads\Actividad2-master\TP-WinForm\obj\Debug\Presentacion.csp
 C:\Users\aleh0\Downloads\Actividad2-master\TP-WinForm\obj\Debug\TP-WinForm.exe
 C:\Users\aleh0\Downloads\Actividad2-master\TP-WinForm\obj\Debug\TP-WinForm.pdb
 D:\Luciano\UTN\OneDrive - frgp.utn.edu.ar\TSP\3er Cuatri\Programacion 3\TP-WinForm\TP-WinForm\obj\Debug\Presentacion.FrmProducto.resources
+F:\Luciano\Github\Carrito de compras\TP-WinForm\bin\Debug\TP-WinForm.exe.config
+F:\Luciano\Github\Carrito de compras\TP-WinForm\bin\Debug\TP-WinForm.exe
+F:\Luciano\Github\Carrito de compras\TP-WinForm\bin\Debug\TP-WinForm.pdb
+F:\Luciano\Github\Carrito de compras\TP-WinForm\bin\Debug\Dominio.dll
+F:\Luciano\Github\Carrito de compras\TP-WinForm\bin\Debug\Negocio.dll
+F:\Luciano\Github\Carrito de compras\TP-WinForm\bin\Debug\Dominio.pdb
+F:\Luciano\Github\Carrito de compras\TP-WinForm\bin\Debug\Negocio.pdb
+F:\Luciano\Github\Carrito de compras\TP-WinForm\obj\Debug\Presentacion.csprojAssemblyReference.cache
+F:\Luciano\Github\Carrito de compras\TP-WinForm\obj\Debug\Presentacion.Detalle.resources
+F:\Luciano\Github\Carrito de compras\TP-WinForm\obj\Debug\Presentacion.Form1.resources
+F:\Luciano\Github\Carrito de compras\TP-WinForm\obj\Debug\Presentacion.FrmProducto.resources
+F:\Luciano\Github\Carrito de compras\TP-WinForm\obj\Debug\TP_WinForm.Properties.Resources.resources
+F:\Luciano\Github\Carrito de compras\TP-WinForm\obj\Debug\Presentacion.csproj.GenerateResource.cache
+F:\Luciano\Github\Carrito de compras\TP-WinForm\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+F:\Luciano\Github\Carrito de compras\TP-WinForm\obj\Debug\Presentacion.csproj.CopyComplete
+F:\Luciano\Github\Carrito de compras\TP-WinForm\obj\Debug\TP-WinForm.exe
+F:\Luciano\Github\Carrito de compras\TP-WinForm\obj\Debug\TP-WinForm.pdb
