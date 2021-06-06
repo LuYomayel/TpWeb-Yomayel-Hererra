@@ -8,27 +8,15 @@
        <% foreach (Dominio.Producto item in lista)
             {   %>
         <div class="producto">
-            
-
-            <a>
-                <img src="<% = item.UrlImagen %>" class="producto__imagen" alt="..." />
-                <div class="producto__informacion">
-                    <p class="producto__nombre"><% = item.Nombre %> </p>
-                    <p class="producto__precio">$<% = item.Precio %> </p>
-                    <div class="camisa">
-                    <form class="formulario">
-                        <a href="Carrito.aspx?id=<% = item.Id %>">Agregar al carrito</a>
-                        
-                    
-                         </div>
-                    <a href="Detalle.aspx?id=<% = item.Id %>">
-                      <button type="button" class="formulario__button">Ver detalle</button>
-                    </a>
-                    </form>
+            <img src="<% = item.UrlImagen %>" class="producto__imagen" alt="..." />
+            <div class="producto__informacion">
+                <p class="producto__nombre"><% = item.Nombre %> </p>
+                <p class="producto__precio">$<% = item.Precio %> </p>
+                <div class="columnas">
+                    <a href="Carrito.aspx?id=<% = item.Id %>" class="boton">Agregar al carrito</a>
+                    <a href="Detalle.aspx?id=<% = item.Id %>" class="boton">Ver detalle</a>
                 </div>
-
-            </a>
-            
+            </div>
         </div>
         <% } %>
     </div>
