@@ -78,7 +78,7 @@ namespace Carrito_de_Compras
             carrito.Items = (List<ItemCarrito>)Session["carrito"];
             ItemCarrito item1 = carrito.Items.Find(x => x.Producto.Id.ToString() == argument);
             carrito.Items.Remove(item1);
-            Session.Add("carrito", carrito);
+            Session.Add("carrito", carrito.Items);
             repetidor.DataSource = null;
             repetidor.DataSource = carrito.Items;
             repetidor.DataBind();
