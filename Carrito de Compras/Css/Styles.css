@@ -121,6 +121,7 @@ nav ul li a{
     grid-template-columns: repeat(2,1fr);
     grid-gap: 2rem;
 }
+
 a {
     text-align: center;
     text-decoration: none;
@@ -192,4 +193,28 @@ a {
     cursor: pointer;
     background-color: var(--secundarioOscuro);
 }
+.table {
+    background-color:lightgray;
+    border: double;
+   
+} 
+.titulo {
+    background-color:white;
+  
+}
+.subtitulo {
+    background-color: wite;
+    font-family: var(--fuente-principal);
+    text-align:center;
+}
+.boton__eliminar {
+    background-color: var(--secundario);
+    border: double;
+    padding: 1rem;
+    transition: background-color .3s ease;
+
+}
+.boton__eliminar:hover {
+    cursor: pointer;
+    background-color: var(--secundarioOscuro);
 
