@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Detalle.aspx.cs" Inherits="Carrito_de_Compras.Detalle" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <h1 class="padding-bottom">Articulo seleccionado</h1>
-    <div class="contenedor">
+    
+    <div class="contenedor sombra">
      
         <div class="columnas ">
             

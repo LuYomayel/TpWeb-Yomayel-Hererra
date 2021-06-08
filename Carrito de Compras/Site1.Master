@@ -23,8 +23,8 @@
                 </div>
             <nav>
             <ul>
+                
                 <li><a href="index.aspx">Tienda</a></li>
-                <li><a href="About.aspx">Nosotros</a></li>
                 <li><a href="Carrito.aspx">Carrito</a></li>
             </ul>
             
@@ -42,7 +42,7 @@
     </form>
 
     <footer class="footer">
-        
+        <h2>Todos los derechos reservados 2021 - Store</h2>
     </footer>
 </body>
 </html>
