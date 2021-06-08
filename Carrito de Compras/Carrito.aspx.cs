@@ -15,13 +15,17 @@ namespace Carrito_de_Compras
         Producto producto = new Producto();
         public Carrito carrito = new Carrito();
         ItemCarrito item = new ItemCarrito();
-        
+        decimal total;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             string id = Request.QueryString["id"];
-            carrito.Items = (List<ItemCarrito>)Session["carrito"];
+            carrito = (Carrito)Session["carrito"];
+            if (carrito == null) carrito = new Carrito();
+            //carrito.Items = (List<ItemCarrito>)Session["carrito"];
             if (carrito.Items == null) carrito.Items = new List<ItemCarrito>();
+
+
             
             if (!IsPostBack)
             {
@@ -45,7 +49,11 @@ namespace Carrito_de_Compras
                 repetidor.DataSource = carrito.Items;
                 repetidor.DataBind();
             }
-            Session.Add("carrito", carrito.Items);
+            lblTotal.Text = carrito.totalCarrito(carrito).ToString();
+            Session.Add("carrito", carrito);
+
+            
+                
             //Session.Add("carrito", carrito);
             /*
             favoritos = (List<Pokemon>)Session["listaFavoritos"];
@@ -75,10 +83,11 @@ namespace Carrito_de_Compras
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
             var argument = ((Button)sender).CommandArgument;
-            carrito.Items = (List<ItemCarrito>)Session["carrito"];
+            //carrito.Items = (List<ItemCarrito>)Session["carrito"];
+            carrito = (Carrito)Session["carrito"];
             ItemCarrito item1 = carrito.Items.Find(x => x.Producto.Id.ToString() == argument);
             carrito.Items.Remove(item1);
-            Session.Add("carrito", carrito.Items);
+            Session.Add("carrito", carrito);
             repetidor.DataSource = null;
             repetidor.DataSource = carrito.Items;
             repetidor.DataBind();

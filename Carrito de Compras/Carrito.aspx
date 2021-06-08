@@ -11,36 +11,17 @@
      
         
     <asp:Repeater runat="server" ID="repetidor">
-
             <ItemTemplate>
                 <div class="table">
                     <p><%#Eval("Producto.Nombre")%></p>
                     <p><%#Eval("Producto.Descripcion")%></p>
                     <p><asp:Label ID="Label1" runat="server" Text='<%#Eval("Subtotal")%>' /></p>
                     <p><asp:TextBox TextMode="Number" ID="txtCantidad" runat="server" AutoPostBack="true" OnTextChanged="txtCantidad_TextChanged"  text='<%#Eval("Cantidad")%>'/></p>
-                    <p><asp:Button Text="Eliminar" CssClass="boton__eliminar" ID="btnEliminar" OnClick="btnEliminar_Click" CommandArgument='<%#Eval("Producto.Id")%>' runat="server" /></p>
+                    <p><asp:Button Text="Eliminar" CssClass="boton__eliminar" AutoPostBack="true" ID="btnEliminar" OnClick="btnEliminar_Click" CommandArgument='<%#Eval("Producto.Id")%>' runat="server" /></p>
                 </div>
-                <tr>
-                    
-                    <td></td>
-                   
-                    <td>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                    <td>
-                        
-                     
-                    </td> 
-                
-                </tr>
-                
-                
             </ItemTemplate>
         </asp:Repeater>
-    
+    <p class="derecha">Total: <asp:Label ID="lblTotal" runat="server" /></p>
  </div>
 </asp:Content>
 

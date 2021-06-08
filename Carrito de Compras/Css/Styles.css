@@ -231,3 +231,7 @@ a {
     cursor: pointer;
     background-color: var(--secundarioOscuro);
 }
+.derecha{
+    margin-top: 2rem;
+    text-align: end;
+}
