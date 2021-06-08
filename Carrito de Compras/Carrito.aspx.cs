@@ -11,6 +11,7 @@ namespace Carrito_de_Compras
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        
         public List<ItemCarrito> carrito1; 
         Producto producto = new Producto();
         public Carrito carrito = new Carrito();
@@ -51,33 +52,6 @@ namespace Carrito_de_Compras
             }
             lblTotal.Text = carrito.totalCarrito(carrito).ToString();
             Session.Add("carrito", carrito);
-
-            
-                
-            //Session.Add("carrito", carrito);
-            /*
-            favoritos = (List<Pokemon>)Session["listaFavoritos"];
-            if (favoritos == null)
-                favoritos = new List<Pokemon>();
-
-            if (!IsPostBack)
-            {
-                if (Request.QueryString["id"] != null)
-                {
-                    if (favoritos.Find(x => x.Id.ToString() == Request.QueryString["id"]) == null)
-                    {
-                        List<Pokemon> listadoOriginal = (List<Pokemon>)Session["listadoPokemons"];
-                        favoritos.Add(listadoOriginal.Find(x => x.Id.ToString() == Request.QueryString["id"]));
-                    }
-                }
-
-                //Repeater
-                repetidor.DataSource = favoritos;
-                repetidor.DataBind();
-            }
-
-            Session.Add("listaFavoritos", favoritos);
-            */
         }
 
         protected void btnEliminar_Click(object sender, EventArgs e)
@@ -91,12 +65,53 @@ namespace Carrito_de_Compras
             repetidor.DataSource = null;
             repetidor.DataSource = carrito.Items;
             repetidor.DataBind();
-            
+            lblTotal.Text = carrito.totalCarrito(carrito).ToString();
         }
 
         protected void txtCantidad_TextChanged(object sender, EventArgs e)
         {
+            var cantidad = ((TextBox)sender).Text;
+            lblPrueba.Text = cantidad;/*
+            var argument = ((TextBox)sender).UniqueID;
+            carrito = (Carrito)Session["carrito"];
+            ItemCarrito item1 = carrito.Items.Find(x => x.Producto.Id.ToString() == argument);
+            item1.Cantidad = int.Parse(cantidad);
+            Session.Add("carrito", carrito);
+            repetidor.DataSource = null;
+            repetidor.DataSource = carrito.Items;
+            repetidor.DataBind();
+            lblTotal.Text = carrito.totalCarrito(carrito).ToString();
+            /*
+            carrito = (Carrito)Session["carrito"];
+            ItemCarrito item1 = carrito.Items.Find(x => x.Producto.Id.ToString() == argument);
+            item1.Cantidad = int.Parse(argument);
+            Session.Add("carrito", carrito);
+            repetidor.DataSource = null;
+            repetidor.DataSource = carrito.Items;
+            repetidor.DataBind();
+            */
             
         }
+
+        protected void lblTotal_Load(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        protected void btnAgregar_Click(object sender, EventArgs e)
+        {
+            var cantidad = lblPrueba.Text;
+            var argument = ((Button)sender).CommandArgument;
+            carrito = (Carrito)Session["carrito"];
+            ItemCarrito item1 = carrito.Items.Find(x => x.Producto.Id.ToString() == argument);
+            item1.Cantidad = int.Parse(cantidad);
+            Session.Add("carrito", carrito);
+            repetidor.DataSource = null;
+            repetidor.DataSource = carrito.Items;
+            repetidor.DataBind();
+            lblTotal.Text = carrito.totalCarrito(carrito).ToString();
+        }
+        
     }
 }
