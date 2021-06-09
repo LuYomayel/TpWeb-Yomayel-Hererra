@@ -11,6 +11,8 @@ namespace Carrito_de_Compras
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+
+
         
         public List<ItemCarrito> carrito1; 
         Producto producto = new Producto();
@@ -20,58 +22,79 @@ namespace Carrito_de_Compras
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string id = Request.QueryString["id"];
-            carrito = (Carrito)Session["carrito"];
-            if (carrito == null) carrito = new Carrito();
-            //carrito.Items = (List<ItemCarrito>)Session["carrito"];
-            if (carrito.Items == null) carrito.Items = new List<ItemCarrito>();
-
-
-            
-            if (!IsPostBack)
+            try
             {
-                if(id != null)
+                string id = Request.QueryString["id"];
+                carrito = (Carrito)Session["carrito"];
+                if (carrito == null) carrito = new Carrito();
+                //carrito.Items = (List<ItemCarrito>)Session["carrito"];
+                if (carrito.Items == null) carrito.Items = new List<ItemCarrito>();
+
+
+
+                if (!IsPostBack)
                 {
-                    if(carrito.Items.Find(x => x.Producto.Id.ToString() == id) == null)
+                    if (id != null)
                     {
-                        List<Producto> listado = (List<Producto>)Session["listadoProductos"];
-                        producto = listado.Find(x => x.Id.ToString() == id);
+                        if (carrito.Items.Find(x => x.Producto.Id.ToString() == id) == null)
+                        {
+                            List<Producto> listado = (List<Producto>)Session["listadoProductos"];
+                            producto = listado.Find(x => x.Id.ToString() == id);
 
-                        item.SubTotal = producto.Precio;
-                        item.Producto = producto;
-                        item.Cantidad = 1;
-                        carrito.FechaCarrito = DateTime.Today;
-                        //itemCarritos.Items = (List<ItemCarrito>)Session["carrito"];
-                        carrito.Items.Add(item);
+                            item.SubTotal = producto.Precio;
+                            item.Producto = producto;
+                            item.Cantidad = 1;
+                            carrito.FechaCarrito = DateTime.Today;
+                            //itemCarritos.Items = (List<ItemCarrito>)Session["carrito"];
+                            carrito.Items.Add(item);
 
+                        }
                     }
+                    //Repeater
+                    repetidor.DataSource = carrito.Items;
+                    repetidor.DataBind();
                 }
-                //Repeater
-                repetidor.DataSource = carrito.Items;
-                repetidor.DataBind();
+                lblTotal.Text = carrito.totalCarrito(carrito).ToString();
+                Session.Add("carrito", carrito);
             }
-            lblTotal.Text = carrito.totalCarrito(carrito).ToString();
-            Session.Add("carrito", carrito);
+            catch (Exception ex)
+            {
+
+                Session.Add("Error", ex.ToString());
+                Response.Redirect("Error.aspx");
+            }
+
         }
 
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
-            var argument = ((Button)sender).CommandArgument;
-            //carrito.Items = (List<ItemCarrito>)Session["carrito"];
-            carrito = (Carrito)Session["carrito"];
-            ItemCarrito item1 = carrito.Items.Find(x => x.Producto.Id.ToString() == argument);
-            carrito.Items.Remove(item1);
-            Session.Add("carrito", carrito);
-            repetidor.DataSource = null;
-            repetidor.DataSource = carrito.Items;
-            repetidor.DataBind();
-            lblTotal.Text = carrito.totalCarrito(carrito).ToString();
+            try
+            {
+                var argument = ((Button)sender).CommandArgument;
+                //carrito.Items = (List<ItemCarrito>)Session["carrito"];
+                carrito = (Carrito)Session["carrito"];
+                ItemCarrito item1 = carrito.Items.Find(x => x.Producto.Id.ToString() == argument);
+                carrito.Items.Remove(item1);
+                Session.Add("carrito", carrito);
+                repetidor.DataSource = null;
+                repetidor.DataSource = carrito.Items;
+                repetidor.DataBind();
+                lblTotal.Text = carrito.totalCarrito(carrito).ToString();
+            }
+            catch (Exception ex)
+            {
+
+                Session.Add("Error", ex.ToString());
+                Response.Redirect("Error.aspx");
+            }
         }
 
         protected void txtCantidad_TextChanged(object sender, EventArgs e)
         {
-            var cantidad = ((TextBox)sender).Text;
-            lblPrueba.Text = cantidad;/*
+            try
+            {
+                var cantidad = ((TextBox)sender).Text;
+                lblPrueba.Text = cantidad;/*
             var argument = ((TextBox)sender).UniqueID;
             carrito = (Carrito)Session["carrito"];
             ItemCarrito item1 = carrito.Items.Find(x => x.Producto.Id.ToString() == argument);
@@ -90,7 +113,16 @@ namespace Carrito_de_Compras
             repetidor.DataSource = carrito.Items;
             repetidor.DataBind();
             */
-            
+            }
+
+            catch (Exception ex)
+            {
+
+                Session.Add("Error", ex.ToString());
+                Response.Redirect("Error.aspx");
+            }
+
+
         }
 
         protected void lblTotal_Load(object sender, EventArgs e)
@@ -101,16 +133,26 @@ namespace Carrito_de_Compras
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
-            var cantidad = lblPrueba.Text;
-            var argument = ((Button)sender).CommandArgument;
-            carrito = (Carrito)Session["carrito"];
-            ItemCarrito item1 = carrito.Items.Find(x => x.Producto.Id.ToString() == argument);
-            item1.Cantidad = int.Parse(cantidad);
-            Session.Add("carrito", carrito);
-            repetidor.DataSource = null;
-            repetidor.DataSource = carrito.Items;
-            repetidor.DataBind();
-            lblTotal.Text = carrito.totalCarrito(carrito).ToString();
+            try
+            {
+                var cantidad = lblPrueba.Text;
+                var argument = ((Button)sender).CommandArgument;
+                carrito = (Carrito)Session["carrito"];
+                ItemCarrito item1 = carrito.Items.Find(x => x.Producto.Id.ToString() == argument);
+                item1.Cantidad = int.Parse(cantidad);
+                Session.Add("carrito", carrito);
+                repetidor.DataSource = null;
+                repetidor.DataSource = carrito.Items;
+                repetidor.DataBind();
+                lblTotal.Text = carrito.totalCarrito(carrito).ToString();
+            }
+            catch (Exception ex)
+            {
+
+                Session.Add("Error", ex.ToString());
+                Response.Redirect("Error.aspx");
+            }
+
         }
         
     }

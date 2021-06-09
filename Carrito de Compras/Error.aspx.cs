@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Carrito_de_Compras
 {
-    public partial class Error : System.Web.UI.Page
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            lblError.Text = Session["Error"] == null ? "No hay error" : (string)Session["Error"];
-        }
-    }
+	public partial class Error : System.Web.UI.Page
+	{
+		protected void Page_Load(object sender, EventArgs e)
+		{
+			Lblerror.Text = Session["Error"] == null ? "No hay error" : (string)Session["Error"] ;
+		}
+	}
 }

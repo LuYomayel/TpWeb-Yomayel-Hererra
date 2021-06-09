@@ -22,10 +22,11 @@ namespace Carrito_de_Compras
                 Session.Add("listadoProductos",lista);
 
             }
-            catch (Exception) 
+            catch (Exception ex) 
             {
 
-                throw;
+                Session.Add("Error",ex.ToString());
+                Response.Redirect("Error.aspx");
             }
         }
 

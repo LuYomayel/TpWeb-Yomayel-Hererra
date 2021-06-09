@@ -13,6 +13,9 @@ namespace Carrito_de_Compras
         public string hola;
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
+                
             int id = int.Parse(Request.QueryString["id"]);
             List<Producto> listado = (List<Producto>)Session["listadoProductos"];
             Producto seleccionado = listado.Find(x => x.Id == id);
@@ -23,6 +26,15 @@ namespace Carrito_de_Compras
             lblPrecio.Text = Convert.ToString(seleccionado.Precio);
             imgseleccionado.Src = seleccionado.UrlImagen;
             hola = (seleccionado.Id).ToString();
+
+        }
+            
+            catch (Exception ex)
+            {
+
+                Session.Add("Error", ex.ToString());
+                Response.Redirect("Error.aspx");
+            }
         }
     }
 }
