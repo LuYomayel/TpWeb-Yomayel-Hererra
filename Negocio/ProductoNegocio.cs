@@ -193,39 +193,18 @@ namespace Negocio
 
         }
 
-        public List<Producto> listarFiltrado(string filtro, string clave, string criterio)
+        public List<Producto> listarFiltrado(string filtro)
         {
 
             List<Producto> lista = new List<Producto>();
             AccesoDatos datos = new AccesoDatos();
-            String consulta = "select A.Codigo, A.Nombre, A.Descripcion, A.Precio, A.ImagenUrl, M.Descripcion Marca, C.Descripcion Categoria from ARTICULOS as A inner join Marcas as M on M.ID = A.IdMarca inner join CATEGORIAS as C on C.Id = A.IdCategoria where A.";
+            String consulta = "select A.Codigo, A.Nombre, A.Descripcion, A.Precio, A.ImagenUrl, M.Descripcion Marca, C.Descripcion Categoria from ARTICULOS as A inner join Marcas as M on M.ID = A.IdMarca inner join CATEGORIAS as C on C.Id = A.IdCategoria where A.nombre Like '" + filtro + "%'";
 
             try
 
             {
 
 
-                switch (criterio)
-                {
-                    case "Comienza con":
-                        consulta = consulta + clave + " Like '" + filtro + "%'";
-                        break;
-                    case "Termina con":
-                        consulta = consulta + clave + " Like '%" + filtro + "'";
-                        break;
-                    case "Contiene":
-                        consulta = consulta + clave + " Like '%" + filtro + "%'";
-                        break;
-                    case "Mayor a":
-                        consulta = consulta + clave + " > " + filtro;
-                        break;
-                    case "Igual a":
-                        consulta = consulta + clave + " = " + filtro;
-                        break;
-                    case "Menor a":
-                        consulta = consulta + clave + " < " + filtro;
-                        break;
-                }
 
                 datos.setearConsulta(consulta);
                 datos.ejecutarLectura();

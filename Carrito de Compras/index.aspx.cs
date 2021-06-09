@@ -28,5 +28,23 @@ namespace Carrito_de_Compras
                 throw;
             }
         }
+
+        protected void BtnBuscar_Click(object sender, EventArgs e)
+        {
+            ProductoNegocio negocio = new ProductoNegocio();
+            Producto producto = new Producto();
+
+            try
+            {
+                lista = negocio.listarFiltrado(TxtFiltro.Text);
+                Session.Add("listadoProductos", lista);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }
