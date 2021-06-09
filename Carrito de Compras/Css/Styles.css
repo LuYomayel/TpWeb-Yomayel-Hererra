@@ -235,3 +235,24 @@ a {
     margin-top: 2rem;
     text-align: end;
 }
+.Lblfiltro {
+    text-align: right;
+    color: var(--negro );
+    font-family: var(--fuente-principal);
+}
+
+.BtnBuscar {
+    background-color: var(--main);
+    border: none;
+    padding: 1rem;
+    transition: background-color .3s ease;
+    padding: 1rem;
+    border-radius: 1%;
+    color:var(--blanco);
+    b
+}
+.BtnBuscar:hover {
+    cursor: pointer;
+    background-color: var(--secundarioOscuro);
+}
+

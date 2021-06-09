@@ -3,11 +3,16 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
      <div class="contenedor">
          <h1>Nuestros Productos</h1>
-     <asp:Label ID="Label1" runat="server" Text="Busque por el nombre: "></asp:Label>
-        <asp:TextBox ID="TxtFiltro" runat="server"></asp:TextBox>
-        <asp:Button ID="BtnBuscar" runat="server" Onclick="BtnBuscar_Click" Text="Buscar" />
+         
+         
+         
     <div class="grid">
-        
+            <asp:Label ID="Label1" class="Lblfiltro" runat="server" Text=" Busque por el nombre: "></asp:Label>
+        <asp:TextBox ID="TxtFiltro" runat="server"></asp:TextBox>
+        <asp:Button ID="BtnBuscar" class="BtnBuscar" runat="server" Onclick="BtnBuscar_Click" Text="Buscar" />
+         
+         
+     
        <% foreach (Dominio.Producto item in lista)
             {   %>
         <div class="producto">
