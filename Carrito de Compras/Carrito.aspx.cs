@@ -136,15 +136,18 @@ namespace Carrito_de_Compras
             try
             {
                 var cantidad = lblPrueba.Text;
-                var argument = ((Button)sender).CommandArgument;
-                carrito = (Carrito)Session["carrito"];
-                ItemCarrito item1 = carrito.Items.Find(x => x.Producto.Id.ToString() == argument);
-                item1.Cantidad = int.Parse(cantidad);
-                Session.Add("carrito", carrito);
-                repetidor.DataSource = null;
-                repetidor.DataSource = carrito.Items;
-                repetidor.DataBind();
-                lblTotal.Text = carrito.totalCarrito(carrito).ToString();
+                if (cantidad != "")
+                {
+                    var argument = ((Button)sender).CommandArgument;
+                    carrito = (Carrito)Session["carrito"];
+                    ItemCarrito item1 = carrito.Items.Find(x => x.Producto.Id.ToString() == argument);
+                    item1.Cantidad = int.Parse(cantidad);
+                    Session.Add("carrito", carrito);
+                    repetidor.DataSource = null;
+                    repetidor.DataSource = carrito.Items;
+                    repetidor.DataBind();
+                    lblTotal.Text = carrito.totalCarrito(carrito).ToString();
+                }
             }
             catch (Exception ex)
             {
