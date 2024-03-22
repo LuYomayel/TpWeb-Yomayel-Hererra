@@ -10,3 +10,9 @@ F:\Luciano\Github\Carrito de compras\Dominio\obj\Debug\Dominio.csprojAssemblyRef
 F:\Luciano\Github\Carrito de compras\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 F:\Luciano\Github\Carrito de compras\Dominio\obj\Debug\Dominio.dll
 F:\Luciano\Github\Carrito de compras\Dominio\obj\Debug\Dominio.pdb
+C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Dominio\bin\Debug\Dominio.dll
+C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Dominio\bin\Debug\Dominio.pdb
+C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Dominio\obj\Debug\Dominio.dll
+C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Dominio\obj\Debug\Dominio.pdb
+C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache

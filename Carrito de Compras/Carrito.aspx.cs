@@ -14,7 +14,6 @@ namespace Carrito_de_Compras
 
 
         
-        public List<ItemCarrito> carrito1; 
         Producto producto = new Producto();
         public Carrito carrito = new Carrito();
         ItemCarrito item = new ItemCarrito();
@@ -27,7 +26,7 @@ namespace Carrito_de_Compras
                 string id = Request.QueryString["id"];
                 carrito = (Carrito)Session["carrito"];
                 if (carrito == null) carrito = new Carrito();
-                //carrito.Items = (List<ItemCarrito>)Session["carrito"];
+               // carrito.Items = (List<ItemCarrito>)Session["carrito"];
                 if (carrito.Items == null) carrito.Items = new List<ItemCarrito>();
 
 
@@ -94,25 +93,9 @@ namespace Carrito_de_Compras
             try
             {
                 var cantidad = ((TextBox)sender).Text;
-                lblPrueba.Text = cantidad;/*
-            var argument = ((TextBox)sender).UniqueID;
-            carrito = (Carrito)Session["carrito"];
-            ItemCarrito item1 = carrito.Items.Find(x => x.Producto.Id.ToString() == argument);
-            item1.Cantidad = int.Parse(cantidad);
-            Session.Add("carrito", carrito);
-            repetidor.DataSource = null;
-            repetidor.DataSource = carrito.Items;
-            repetidor.DataBind();
-            lblTotal.Text = carrito.totalCarrito(carrito).ToString();
-            /*
-            carrito = (Carrito)Session["carrito"];
-            ItemCarrito item1 = carrito.Items.Find(x => x.Producto.Id.ToString() == argument);
-            item1.Cantidad = int.Parse(argument);
-            Session.Add("carrito", carrito);
-            repetidor.DataSource = null;
-            repetidor.DataSource = carrito.Items;
-            repetidor.DataBind();
-            */
+                lblTotal.Text = cantidad;
+            
+            
             }
 
             catch (Exception ex)
@@ -135,7 +118,7 @@ namespace Carrito_de_Compras
         {
             try
             {
-                var cantidad = lblPrueba.Text;
+                var cantidad = lblTotal.Text;
                 if (cantidad != "")
                 {
                     var argument = ((Button)sender).CommandArgument;

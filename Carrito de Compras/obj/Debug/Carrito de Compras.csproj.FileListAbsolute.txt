@@ -621,8 +621,8 @@ C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Herer
 C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Carrito de Compras\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Carrito de Compras\bin\es\System.Web.Optimization.resources.dll
 C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Carrito de Compras\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
-C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Carrito de Compras\obj\Debug\Carrito de Compras.csprojAssemblyReference.cache
 C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Carrito de Compras\obj\Debug\Carrito de Compras.csproj.CoreCompileInputs.cache
 C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Carrito de Compras\obj\Debug\Carrito de Compras.csproj.CopyComplete
 C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Carrito de Compras\obj\Debug\Carrito de Compras.dll
 C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Carrito de Compras\obj\Debug\Carrito de Compras.pdb
+C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Carrito de Compras\obj\Debug\Carrito de Compras.csproj.AssemblyReference.cache

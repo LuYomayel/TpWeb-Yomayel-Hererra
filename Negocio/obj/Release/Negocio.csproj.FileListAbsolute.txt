@@ -1,0 +1,9 @@
+C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Negocio\bin\Release\Negocio.dll
+C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Negocio\bin\Release\Negocio.pdb
+C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Negocio\bin\Release\Dominio.dll
+C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Negocio\bin\Release\Dominio.pdb
+C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Negocio\obj\Release\Negocio.csproj.AssemblyReference.cache
+C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Negocio\obj\Release\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Negocio\obj\Release\Negocio.csproj.CopyComplete
+C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Negocio\obj\Release\Negocio.dll
+C:\Users\aleh0\OneDrive\Imágenes\Documentos\PROG 3 2021\tp4\TpWeb-Yomayel-Hererra\Negocio\obj\Release\Negocio.pdb
